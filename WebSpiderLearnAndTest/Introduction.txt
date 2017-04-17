@@ -1,0 +1,16 @@
+﻿/************************************************************************************
+*
+*    1.本项目为个人的学习网络爬虫的项目。
+*    2.本项目将不断的改进和重构，实现一个基础的通用的爬虫框架，方便其他项目扩展。
+*    3.欢迎大家也加入到本项目的开发上来，一起学习，一起进步
+*
+*************************************************************************************/
+
+
+/************************************************************************************
+*
+*    1.This project for personal learning web crawler projects.
+*    2.This project will continuously improve and restructure, implement a basic universal reptilian framework to facilitate other project extensions.
+*    3.Welcome to the development of this project, to study together, to progress together
+*
+*************************************************************************************/
