@@ -5,3 +5,7 @@ A simple C# web spider application , It catches all the hotels of hangzhou from 
 
 ## screenshot[以下是示例截图]:
 ![image](https://github.com/dathlin/WebSpiderLearnAndTest/raw/master/WebSpiderLearnAndTest/screenshots/hotel.png)
+
+## Catch pictures from taobao.com [从淘宝获取淘MM照片]
+能获取到绝大多数的照片，但是总会有几个会出现异常。
+![image](https://github.com/dathlin/WebSpiderLearnAndTest/raw/master/WebSpiderLearnAndTest/screenshots/alibaba.png)

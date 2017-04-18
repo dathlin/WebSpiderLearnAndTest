@@ -266,6 +266,7 @@ namespace WebSpiderLearnAndTest
     /// </summary>
     public class AdvancedWebSpider : WebSpider
     {
+        public int SleepTimeWait { get; set; } = 0;
         /// <summary>
         /// 内核对象，用于生成网页
         /// </summary>
@@ -274,6 +275,8 @@ namespace WebSpiderLearnAndTest
         /// 定义通信参数
         /// </summary>
         private PhantomJSDriverService _service;
+
+        public event EventHandler OnTotleCompleted = null;
 
 
         public AdvancedWebSpider(string proxy = null)
@@ -353,9 +356,12 @@ namespace WebSpiderLearnAndTest
                         watch = DateTime.Now;
                         if (operation.Action != null) operation.Action.Invoke(driver);
                         var driverWait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(operation.Timeout));//设置超时时间为x毫秒
+                        if(SleepTimeWait>10) System.Threading.Thread.Sleep(SleepTimeWait);
                         if (operation.Condition != null) driverWait.Until(operation.Condition);
                         goto P1;
                     }
+
+                    OnTotleCompleted(this, new EventArgs());
                 }
                 catch (Exception ex)
                 {
